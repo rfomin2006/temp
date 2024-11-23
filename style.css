@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+:root {
+    --clr1: #332D2D;
+    --clr2: #C60000;
+    --clr3: #FAF4ED;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background: var(--clr1);
+    padding-inline: 200px;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.search {
+    position: relative;
+}
+
+.search > input {
+    height: 40px;
+    border-radius: 50px;
+    width: 300px;
+    outline: none;
+    border: none;
+    padding-inline: 14px;
+}
+
+.search_icon {
+    background-color: var(--clr2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.container {
+    font-size: 40px;
+    width: 1331px;
+    margin-inline: 200px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+button {
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    color: #fff;
+    background: var(--clr2);
+    width: 320px;
+    align-items: center;
+    height: 57px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding-left: 24px;
+}
+
+.arrow_wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1px;
+    top: 1px;
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.card > img {
+    width: 325px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.card_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    padding: 20px 20px 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F4F4F4;
+    border-radius: 20px;
+}
